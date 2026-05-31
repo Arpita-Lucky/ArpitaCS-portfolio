@@ -1,0 +1,57 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+ body {
+            display: flex;
+            width: 100%;
+            min-height: 100vh;
+            background-color: #f3f3f6; 
+            font-family: sans-serif;
+        }
+        .dot-grid-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            /* We made the dot slightly larger (1.5px) and darker (#71717a) so it's impossible to miss */
+            background-image: radial-gradient(#bbbbc6 1.0px, transparent 1.0px);
+            background-size: 18px 18px;
+        }
+  /* The right side wrapper */
+  .right {
+    margin-left: auto;  /* pushes to the right */
+    padding: 40px;
+  }
+
+  /* This box holds BOTH images stacked */
+  .portrait-wrapper {
+    position: relative; /* ← IMPORTANT: allows children to overlap */
+    width: 320px;
+    height: 400px;
+  }
+
+  /* Your full cartoon face — sits at the bottom */
+  .portrait-base {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
+  /* Your pupils image — sits on top and will MOVE */
+  .portrait-pupils {
+    position: absolute;
+    top: -19%;    /* ← adjust this to align pupils vertically */
+    left: -15%;   /* ← adjust this to align pupils horizontally */
+    width: 130%;  /* ← adjust size to match your image */
+    pointer-events: none;
+    transition: transform 0.1s ease-out;
+  }
+.left {
+    max-width: 400px;
+    padding: 40px;
+}
