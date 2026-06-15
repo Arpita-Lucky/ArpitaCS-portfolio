@@ -1,35 +1,294 @@
-
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arpita's  Portfolio</title>
-   <link rel="stylesheet" href="style.css">
-</head>
-<body>
 
-    <div class="dot-grid-bg"></div>
-     <div class="left">
-        <h1>Hi, I'm Arpita!</h1>
-        <p>I'm a software developer with a passion for creating innovative solutions.
-             I specialize in web development and have experience with various programming 
-             languages and frameworks. In my free time, I enjoy exploring 
-             new technologies and working on personal projects.</p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arpita's Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Space+Mono:wght@400;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+  <div class="dot-grid-bg"></div>
+
+  <!-- ── HERO: two-column layout matching your sketch ── -->
+  <section class="hero" id="home">
+
+    <!-- LEFT: h1 heading block + paragraph -->
+    <div class="left">
+      <h1 class="hero-name">
+        Hi, i'm<br><span class="accent">Arpita</span>
+      </h1>
+      <div class="role-container">
+        <span id="role-text"></span><span id="cursor">_</span>
+      </div>
+      <p class="bio">
+        Computer Science student at Sukkur IBA University passionate about Artificial Intelligence,
+        software engineering, and building technology that creates real-world impact.
+        Experienced in leadership, event management, technical projects, and community-driven initiatives.
+      </p>
     </div>
 
+    <!-- RIGHT: lamp top-right, portrait centered, resume button below -->
     <div class="right">
-     <div class="portrait-wrapper"> 
 
-    <!-- Your cartoon face (background layer) -->
-    <img src="arpita_cartoon.png" class="portrait-base" />
+      <!-- Lamp icon pinned top-right of right column -->
+      <div class="lamp-container">
+      <div class="lamp-wire"></div>
+      <div class="lamp">
+        <div class="lamp-top"></div>
+        <div class="lamp-middle"></div>
+        <div class="lamp-bottom"></div>
+      </div>
+      <div class="light"></div>
+    </div>
 
-    <!-- Your pupils (moves with mouse) -->
-    <img src="pupils.png" class="portrait-pupils" id="pupils" />
+      <!-- Portrait with eye-tracking -->
+      <div class="portrait-wrapper">
+        <img src="arpita_cartoon.png" class="portrait-base" alt="Arpita cartoon portrait" />
+        <img src="pupils.png" class="portrait-pupils" id="pupils" alt="" />
+      </div>
 
+      <!-- Resume button below portrait -->
+      <button class="resume-button">⬇ Download Resume</button>
+
+    </div>
+  </section>
+
+  <!-- ── ABOUT ME SECTION ─────────────────────────────── -->
+  <section class="about-section" id="about-me">
+    <h2 class="section-label">✦ About Me</h2>
+    <div class="about-grid">
+
+      <div class="about-card about-main">
+        <h3>about <span class="accent">me</span> ♡</h3>
+        <p>I enjoy building digital experiences that feel both functional and human. My work lives somewhere between technology, creativity, and storytelling. I love turning ideas into interactive experiences and blending design with code to create solutions that are meaningful and engaging.</p>
+      </div>
+
+      <div class="about-card education">
+        <h4>🎓 Education</h4>
+        <p>
+          <strong>BS in Computer Science</strong><br>
+          Sukkur IBA University<br>
+          2023 - 2027 (expected)
+        </p>
+      </div>
+
+      <div class="about-card focus-areas">
+        <h4>✨ Focus Areas</h4>
+        <div class="pills-container">
+          <span class="tech-pill">Web Development</span>
+          <span class="tech-pill">AI & ML</span>
+          <span class="tech-pill">UI/UX Design</span>
+          <span class="tech-pill">Creative Coding</span>
+          <span class="tech-pill">Product Management</span>
+        </div>
+      </div>
+
+      <div class="about-card beyond-code">
+        <h4>🚀 Beyond the Code</h4>
+        <p>I'm passionate about creativity, aesthetics, music, design, and internet culture. I believe the best ideas come from curiosity and observation.</p>
+      </div>
+
+      <div class="about-card ideas">
+        <p><strong>Ideas:</strong><br>+ curiosity<br>+ consistency<br>+ impact</p>
       </div>
     </div>
-   
-   
-<script src="script.js"></script>
+  </section>
+
+  <!-- ── PROJECTS: horizontal scrolling cards ── -->
+  <section class="projects-section" id="projects">
+    <h2 class="section-label">✦ projects</h2>
+
+    <div class="cards-track">
+
+      <div class="card">
+        <div class="card-tag">ML / Healthcare AI</div>
+        <h3>NeuroGen AI</h3>
+        <p>Interdisciplinary ML pipeline predicting Alzheimer's disease risk from genetic markers and lifestyle data. Built with random forest and MLP models across a full EDA-to-deployment workflow.</p>
+        <div class="card-footer">
+          <span class="tech-pill">Python</span>
+          <span class="tech-pill">Pandas</span>
+          <span class="tech-pill">Scikit-learn</span>
+          <span class="tech-pill">Matplotlib</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-tag">Web</div>
+        <h3>Arpita's Portfolio</h3>
+        <p>Interactive developer portfolio with an eye-tracking cartoon portrait, typewriter role animation, and horizontally scrollable project cards.</p>
+        <div class="card-footer">
+          <span class="tech-pill">HTML</span>
+          <span class="tech-pill">CSS</span>
+          <span class="tech-pill">JS</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-tag">ML</div>
+        <h3>Study Technique Predictor</h3>
+        <p>Personality-based ML model that recommends study techniques via a React frontend.</p>
+        <div class="card-footer">
+          <span class="tech-pill">Python</span>
+          <span class="tech-pill">Scikit-learn</span>
+          <span class="tech-pill">React</span>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-tag">Web</div>
+        <h3>Arpi's Atelier-E-Commerce Platform</h3>
+        <p>Fully responsive web storefront for a handmade jewelry brand featuring dynamic UI components, smooth interactions, and cross-browser compatibility optimized for real-world business use.</p>
+        <div class="card-footer">
+          <span class="tech-pill">HTML</span>
+          <span class="tech-pill">CSS</span>
+          <span class="tech-pill">JS</span>
+          <span class="tech-pill">Canva</span>
+        </div>
+      </div>
+       
+        <div class="card">
+        <div class="card-tag">Desktop App</div>
+        <h3>Furry Friends Finder-Pet Adoption App</h3>
+        <p>Desktop application where users browse available pets at an adoption center
+           and process adoptions, backed by a structured relational SQL database with a clean Java GUI.</p>
+        <div class="card-footer">
+          <span class="tech-pill">SQL</span>
+          <span class="tech-pill">Java</span>
+        </div>
+      </div>
+       
+        <div class="card">
+        <div class="card-tag"> Productivity</div>
+        <h3>Study Buddy-Student Productivity Tool</h3>
+        <p>GUI-based note management app with SQL-backed storage for creating, editing, and reviewing notes — plus a built-in focus timer to support structured study sessions.</p>
+        <div class="card-footer"> 
+          <span class="tech-pill">Java</span>
+          <span class="tech-pill">SQL</span>
+        </div>
+      </div>
+        
+          <div class="card">
+        <div class="card-tag"> C++</div>
+        <h3>Fun Trivia-Two Player Quiz Game</h3>
+        <p>Command-line two-player trivia game with three category modes (Easy, Common, Fun). Players earn points per correct answer and the first to reach 50 wins.</p>
+        <div class="card-footer"> 
+          <span class="tech-pill">C++</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  
+    <div id="custom-popup" class="popup-overlay">
+    <div class="popup-content">
+    <span class="close-btn">&times;</span>
+    <h2>✦ Hello! this is me ✦</h2>
+    <img src="me.png" alt="you were suppose to see me here" class="popup-image"><br>
+    <p>hoping to work together!</p>
+  </div>
+</div> 
+
+
+  <button class="hamburger-menu" id="hamburger-menu">
+    <span class="hamburger-bar"></span>
+    <span class="hamburger-bar"></span>
+    <span class="hamburger-bar"></span>
+  </button>
+
+  <nav class="nav-menu" id="nav-menu">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about-me">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#" id="resume-link">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="contact-section" id="contact">
+    <div class="contact-left">
+      <h2>let's<br><span class="accent">connect</span> ✨</h2>
+      <p>Have a project in mind, a creative idea, or just want to say hi? I'd love to hear from you! ♡</p>
+      <div class="contact-links">
+        <a href="mailto:Arpitalucky.bsaif23@iba-suk.edu.pk" class="contact-link">
+          <i class="fas fa-envelope"></i>
+          <div>
+            <span>Email</span>
+            <span>Arpitalucky.bsaif23@iba-suk.edu.pk</span>
+          </div>
+        </a>
+        <a href="tel:031032894" class="contact-link">
+          <i class="fas fa-phone-alt"></i>
+          <div>
+            <span>Phone</span>
+            <span>031032894</span>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/arpitalucky" target="_blank" class="contact-link">
+          <i class="fab fa-linkedin"></i>
+          <div>
+            <span>LinkedIn</span>
+            <span>linkedin.com/in/arpitalucky</span>
+          </div>
+        </a>
+        <a href="https://github.com/Arpita-Lucky" target="_blank" class="contact-link">
+          <i class="fab fa-github"></i>
+          <div>
+            <span>GitHub</span>
+            <span>github.com/Arpita-Lucky</span>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="contact-right">
+      <form class="contact-form">
+        <div class="form-header">
+          <span></span><span></span><span></span>
+          <p>MESSAGE.NEW</p>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="name">YOUR NAME</label>
+            <input type="text" id="name" placeholder="Enter your name">
+          </div>
+          <div class="form-group">
+            <label for="email">EMAIL ADDRESS</label>
+            <input type="email" id="email" placeholder="Enter your email">
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="subject">SUBJECT</label>
+          <input type="text" id="subject" placeholder="What's this about?">
+        </div>
+        <div class="form-group">
+          <label for="message">MESSAGE</label>
+          <textarea id="message" placeholder="Type your message here..."></textarea>
+        </div>
+        <button type="submit" class="send-button">send message</button>
+      </form>
+    </div>
+  </section>
+    <!-- ── MODAL POP-UP ─────────────────────────────────── -->
+  <div id="notification-modal" class="modal-overlay">
+    <div class="modal-content">
+      <p id="modal-message"></p>
+      <button id="modal-close-btn">Close</button>
+    </div>
+  </div>
+<footer>
+    <span>🧠 let's create something <strong>meaningful</strong>. ✦</span>
+  </footer>
+  <script src="script.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+
+
 </body>
+
+</html>
