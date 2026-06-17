@@ -178,6 +178,7 @@ body {
 /* Portrait wrapper — both images stacked */
 .portrait-wrapper {
   position: relative;
+  left: -100px;
   width: 300px;
   height: 370px;
 }
@@ -201,6 +202,8 @@ body {
 /* Resume button — below the portrait */
 .resume-button {
   padding: 10px 24px;
+  position: relative;
+  left: -100px;
   background-color: var(--purple);
   color: #fff;
   border: 3px solid #fff;
@@ -644,7 +647,196 @@ footer {
       "ideas";
   }
 }
+/* ══════════════════════════════
+   TECH STACK SECTION
+   Append this to style.css
+════════════════════════════════ */
 
+.tech-section {
+  padding: 0 80px 60px;
+}
+
+.tech-eyebrow {
+  display: inline-block;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+  color: var(--purple-dark);
+  border: 1.5px solid var(--card-border);
+  border-radius: 999px;
+  padding: 4px 14px;
+  margin-bottom: 1.2rem;
+}
+
+/* Two-column hero row */
+.tech-hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  align-items: start;
+  margin-bottom: 2rem;
+}
+
+.tech-headline {
+  font-family: 'Syne', sans-serif;
+  font-size: clamp(2.8rem, 6vw, 4.2rem);
+  font-weight: 800;
+  line-height: 1.05;
+  margin-bottom: 0.8rem;
+  color: var(--black);
+}
+
+.tech-headline span {
+  color: var(--purple);
+}
+
+.tech-sub {
+  font-size: 0.92rem;
+  color: #555;
+  line-height: 1.75;
+  margin-bottom: 1.2rem;
+}
+
+.tech-sub strong {
+  color: var(--purple-dark);
+  font-weight: 600;
+}
+
+.tech-quote {
+  border: 1.5px solid var(--card-border);
+  border-radius: 14px;
+  padding: 12px 16px;
+  font-size: 0.82rem;
+  color: #666;
+  font-style: italic;
+  line-height: 1.65;
+  display: inline-block;
+}
+
+/* Terminal block */
+.tech-terminal {
+  background: var(--black);
+  border-radius: 16px;
+  padding: 18px 20px;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.78rem;
+  line-height: 2;
+  color: #999;
+  position: relative;
+}
+
+.terminal-dots {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 12px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.dot.red    { background: #ff5f57; }
+.dot.yellow { background: #febc2e; }
+.dot.green  { background: #28c840; }
+
+.terminal-tag {
+  margin-left: auto;
+  color: #444;
+  font-size: 0.8rem;
+}
+
+.ln   { color: #444; display: inline-block; width: 20px; user-select: none; }
+.t-key   { color: #f9c6d0; }
+.t-str   { color: #c3e88d; }
+.t-arr   { color: #89ddff; }
+.t-white { color: #fff; }
+
+/* Skill cards grid */
+.skill-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 14px;
+}
+
+.skill-card {
+  background: var(--card-bg);
+  border: 1.5px solid var(--card-border);
+  border-radius: 18px;
+  padding: 18px 16px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.skill-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 24px var(--card-border);
+}
+
+.skill-card-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+}
+
+.skill-card-head span {
+  font-family: 'Syne', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--black);
+  line-height: 1.2;
+}
+
+.skill-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.purple-bg { background: #e4c4f5; color: #d53aed; }
+.pink-bg   { background: #fbeaf0; color: #d4537e; }
+.yellow-bg { background: #faeeda; color: #ba7517; }
+.green-bg  { background: #e1f5ee; color: #0f6e56; }
+.blue-bg   { background: #b8b4ec; color: #4704bc; }
+
+.skill-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.skill-card ul li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.78rem;
+  color: #555;
+}
+
+/* colored dots per category */
+.dot-purple, .dot-pink, .dot-yellow, .dot-green , .dot-blue {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  display: inline-block;
+}
+
+.dot-purple { background: #9b50c4; }
+.dot-pink   { background: #9d234b; }
+.dot-yellow { background: #ba7517; }
+.dot-green  { background: #0f6e56; }
+.dot-blue   { background: #4704bc ;}
 /* ── CONTACT SECTION ──────────────────────────────── */
 .contact-section {
   display: flex;

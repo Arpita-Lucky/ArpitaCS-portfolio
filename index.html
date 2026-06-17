@@ -7,14 +7,30 @@
   <title>Arpita's Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Space+Mono:wght@400;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&family=Space+Mono:wght@400;700&family=Syne:wght@700;800&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
   <div class="dot-grid-bg"></div>
+  <button class="hamburger-menu" id="hamburger-menu">
+    <span class="hamburger-bar"></span>
+    <span class="hamburger-bar"></span>
+    <span class="hamburger-bar"></span>
+  </button>
 
+  <nav class="nav-menu" id="nav-menu">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about-me">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#" id="resume-link">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
   <!-- ── HERO: two-column layout matching your sketch ── -->
   <section class="hero" id="home">
 
@@ -38,14 +54,14 @@
 
       <!-- Lamp icon pinned top-right of right column -->
       <div class="lamp-container">
-      <div class="lamp-wire"></div>
-      <div class="lamp">
-        <div class="lamp-top"></div>
-        <div class="lamp-middle"></div>
-        <div class="lamp-bottom"></div>
+        <div class="lamp-wire"></div>
+        <div class="lamp">
+          <div class="lamp-top"></div>
+          <div class="lamp-middle"></div>
+          <div class="lamp-bottom"></div>
+        </div>
+        <div class="light"></div>
       </div>
-      <div class="light"></div>
-    </div>
 
       <!-- Portrait with eye-tracking -->
       <div class="portrait-wrapper">
@@ -66,7 +82,9 @@
 
       <div class="about-card about-main">
         <h3>about <span class="accent">me</span> ♡</h3>
-        <p>I enjoy building digital experiences that feel both functional and human. My work lives somewhere between technology, creativity, and storytelling. I love turning ideas into interactive experiences and blending design with code to create solutions that are meaningful and engaging.</p>
+        <p>I enjoy building digital experiences that feel both functional and human. My work lives somewhere between
+          technology, creativity, and storytelling. I love turning ideas into interactive experiences and blending
+          design with code to create solutions that are meaningful and engaging.</p>
       </div>
 
       <div class="about-card education">
@@ -90,12 +108,20 @@
       </div>
 
       <div class="about-card beyond-code">
-        <h4>🚀 Beyond the Code</h4>
-        <p>I'm passionate about creativity, aesthetics, music, design, and internet culture. I believe the best ideas come from curiosity and observation.</p>
+        <h4>💡  Beyond the Code</h4>
+        <p>I'm passionate about creativity, writing, creation, reading, design, and internet culture. I believe the best ideas
+          come from curiosity and observation.</p>
       </div>
 
       <div class="about-card ideas">
-        <p><strong>Ideas:</strong><br>+ curiosity<br>+ consistency<br>+ impact</p>
+        <p><strong>Languages:</strong>
+          <br>+ Sindhi
+          <br>+ English
+          <br>+ Urdu
+          <br>+ Hindi
+          <br>+ Punjabi(beginner)
+          <br>+ Italian(beginner)
+        </p>
       </div>
     </div>
   </section>
@@ -109,7 +135,8 @@
       <div class="card">
         <div class="card-tag">ML / Healthcare AI</div>
         <h3>NeuroGen AI</h3>
-        <p>Interdisciplinary ML pipeline predicting Alzheimer's disease risk from genetic markers and lifestyle data. Built with random forest and MLP models across a full EDA-to-deployment workflow.</p>
+        <p>Interdisciplinary ML pipeline predicting Alzheimer's disease risk from genetic markers and lifestyle data.
+          Built with random forest and MLP models across a full EDA-to-deployment workflow.</p>
         <div class="card-footer">
           <span class="tech-pill">Python</span>
           <span class="tech-pill">Pandas</span>
@@ -121,7 +148,8 @@
       <div class="card">
         <div class="card-tag">Web</div>
         <h3>Arpita's Portfolio</h3>
-        <p>Interactive developer portfolio with an eye-tracking cartoon portrait, typewriter role animation, and horizontally scrollable project cards.</p>
+        <p>Interactive developer portfolio with an eye-tracking cartoon portrait, typewriter role animation, and
+          horizontally scrollable project cards.</p>
         <div class="card-footer">
           <span class="tech-pill">HTML</span>
           <span class="tech-pill">CSS</span>
@@ -143,7 +171,8 @@
       <div class="card">
         <div class="card-tag">Web</div>
         <h3>Arpi's Atelier-E-Commerce Platform</h3>
-        <p>Fully responsive web storefront for a handmade jewelry brand featuring dynamic UI components, smooth interactions, and cross-browser compatibility optimized for real-world business use.</p>
+        <p>Fully responsive web storefront for a handmade jewelry brand featuring dynamic UI components, smooth
+          interactions, and cross-browser compatibility optimized for real-world business use.</p>
         <div class="card-footer">
           <span class="tech-pill">HTML</span>
           <span class="tech-pill">CSS</span>
@@ -151,66 +180,178 @@
           <span class="tech-pill">Canva</span>
         </div>
       </div>
-       
-        <div class="card">
+
+      <div class="card">
         <div class="card-tag">Desktop App</div>
         <h3>Furry Friends Finder-Pet Adoption App</h3>
         <p>Desktop application where users browse available pets at an adoption center
-           and process adoptions, backed by a structured relational SQL database with a clean Java GUI.</p>
+          and process adoptions, backed by a structured relational SQL database with a clean Java GUI.</p>
         <div class="card-footer">
           <span class="tech-pill">SQL</span>
           <span class="tech-pill">Java</span>
         </div>
       </div>
-       
-        <div class="card">
+
+      <div class="card">
         <div class="card-tag"> Productivity</div>
         <h3>Study Buddy-Student Productivity Tool</h3>
-        <p>GUI-based note management app with SQL-backed storage for creating, editing, and reviewing notes — plus a built-in focus timer to support structured study sessions.</p>
-        <div class="card-footer"> 
+        <p>GUI-based note management app with SQL-backed storage for creating, editing, and reviewing notes — plus a
+          built-in focus timer to support structured study sessions.</p>
+        <div class="card-footer">
           <span class="tech-pill">Java</span>
           <span class="tech-pill">SQL</span>
         </div>
       </div>
-        
-          <div class="card">
+
+      <div class="card">
         <div class="card-tag"> C++</div>
         <h3>Fun Trivia-Two Player Quiz Game</h3>
-        <p>Command-line two-player trivia game with three category modes (Easy, Common, Fun). Players earn points per correct answer and the first to reach 50 wins.</p>
-        <div class="card-footer"> 
+        <p>Command-line two-player trivia game with three category modes (Easy, Common, Fun). Players earn points per
+          correct answer and the first to reach 50 wins.</p>
+        <div class="card-footer">
           <span class="tech-pill">C++</span>
         </div>
       </div>
 
     </div>
   </section>
-  
-    <div id="custom-popup" class="popup-overlay">
-    <div class="popup-content">
-    <span class="close-btn">&times;</span>
-    <h2>✦ Hello! this is me ✦</h2>
-    <img src="me.png" alt="you were suppose to see me here" class="popup-image"><br>
-    <p>hoping to work together!</p>
+     <!-- TECH STACK SECTION -->
+
+
+<section class="tech-section">
+
+  <span class="tech-eyebrow">✦ my toolkit</span>
+
+  <div class="tech-hero">
+
+    <div class="tech-left">
+      <h2 class="tech-headline">tech <span>stack</span></h2>
+      <p class="tech-sub">
+        A collection of technologies, frameworks &amp; creative tools I use to
+        <strong>build</strong>, <strong>design</strong>, <strong>automate</strong> &amp; <strong>experiment</strong>.
+      </p>
+      <div class="tech-quote">
+        ♡ &nbsp; always learning. always building, always creating.
+      </div>
+    </div>
+
+    <div class="tech-terminal">
+      <div class="terminal-dots">
+        <span class="dot red"></span>
+        <span class="dot yellow"></span>
+        <span class="dot green"></span>
+        <span class="terminal-tag">&lt;/&gt;</span>
+      </div>
+      <div><span class="ln">01</span> <span class="t-key">const</span> <span class="t-white">me</span> = {</div>
+      <div><span class="ln">02</span>   <span class="t-key">passion</span>: <span class="t-str">'Building digital solutions'</span>,</div>
+      <div><span class="ln">03</span>   <span class="t-key">code</span>: <span class="t-arr">[</span><span class="t-str">'Python'</span>, <span class="t-str">'JavaScript'</span>, <span class="t-str">'CSS'</span><span class="t-arr">]</span>,</div>
+      <div><span class="ln">04</span>   <span class="t-key">focus</span>: <span class="t-str">'Creating meaningful</span></div>
+      <div><span class="ln">05</span>          <span class="t-str">digital experiences'</span>,</div>
+      <div><span class="ln">06</span> };</div>
+    </div>
+
   </div>
-</div> 
 
+  <div class="skill-cards">
 
-  <button class="hamburger-menu" id="hamburger-menu">
-    <span class="hamburger-bar"></span>
-    <span class="hamburger-bar"></span>
-    <span class="hamburger-bar"></span>
-  </button>
+    <div class="skill-card">
+      <div class="skill-card-head">
+        <div class="skill-icon purple-bg">&#60;/&#62;</div>
+        <span>Languages</span>
+      </div>
+      <ul>
+        <li><span class="dot-purple"></span>Python</li>
+        <li><span class="dot-purple"></span>Java</li>
+        <li><span class="dot-purple"></span>JavaScript</li>
+        <li><span class="dot-purple"></span>HTML</li>
+        <li><span class="dot-purple"></span>CSS</li>
+        <li><span class="dot-purple"></span>C++</li>
+        <li><span class="dot-purple"></span>SQL</li>
+      </ul>
+    </div>
 
-  <nav class="nav-menu" id="nav-menu">
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about-me">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#" id="resume-link">Resume</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+    <div class="skill-card">
+      <div class="skill-card-head">
+        <div class="skill-icon pink-bg">&#9633;</div>
+        <span>Frontend &amp; Dev</span>
+      </div>
+      <ul>
+        <li><span class="dot-pink"></span>React</li>
+        <li><span class="dot-pink"></span>CSS</li>
+        <li><span class="dot-pink"></span>REST APIs</li>
+        <li><span class="dot-pink"></span>Node.js</li>
+        <li><span class="dot-pink"></span>Express.js</li>
+        <li><span class="dot-pink"></span>Responsive Design</li>
+        <li><span class="dot-pink"></span>MERN Stack</li>
+      </ul>
+    </div>
 
+    <div class="skill-card">
+      <div class="skill-card-head">
+        <div class="skill-icon yellow-bg">&#9711;</div>
+        <span>AI / ML</span>
+      </div>
+      <ul>
+        <li><span class="dot-yellow"></span>Google Colab</li>
+        <li><span class="dot-yellow"></span>Scikit-learn</li>
+        <li><span class="dot-yellow"></span>Pandas</li>
+        <li><span class="dot-yellow"></span>NumPy</li>
+        <li><span class="dot-yellow"></span>Matplotlib</li>
+         <li><span class="dot-yellow"></span>Jupyter Notebook</li>
+      </ul>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-card-head">
+        <div class="skill-icon green-bg">&#9881;</div>
+        <span>Tools &amp; Systems</span>
+      </div>
+      <ul>
+        <li><span class="dot-green"></span>Git &amp; GitHub</li>
+        <li><span class="dot-green"></span>VS Code</li>
+        <li><span class="dot-green"></span>Figma</li>
+        <li><span class="dot-green"></span>Canvas</li>
+        <li><span class="dot-green"></span>Firebase</li>
+        <li><span class="dot-green"></span>MongoDB</li>
+      </ul>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-card-head">
+        <div class="skill-icon pink-bg">&#9825;</div>
+        <span>Soft Skills</span>
+      </div>
+      <ul>
+        <li><span class="dot-pink"></span>Communication</li>
+        <li><span class="dot-pink"></span>Leadership</li>
+        <li><span class="dot-pink"></span>Problem Solving</li>
+        <li><span class="dot-pink"></span>Creative Thinking</li>
+        <li><span class="dot-pink"></span>Event Management</li>
+        <li><span class="dot-pink"></span>Public Speaking</li>
+        <li><span class="dot-pink"></span>Content Strategy</li>
+          
+      </ul>
+    </div>
+
+     <div class="skill-card">
+      <div class="skill-card-head">
+        <div class="skill-icon blue-bg">&#9825;</div>
+        <span>CS Core</span>
+      </div>
+      <ul>
+        <li><span class="dot-blue"></span> OOP</li>
+        <li><span class="dot-blue"></span>Data Structures & Algorithms</li>
+        <li><span class="dot-blue"></span>Software Engineering Principles</li>
+        <li><span class="dot-blue"></span>Operating Systems</li>
+        <li><span class="dot-blue"></span> Artificial Intelligence</li>
+        <li><span class="dot-blue"></span>Machine Learning</li>
+        <li><span class="dot-blue"></span> Data Science</li>   
+      </ul>
+    </div>
+
+  </div>
+
+</section>
   <section class="contact-section" id="contact">
     <div class="contact-left">
       <h2>let's<br><span class="accent">connect</span> ✨</h2>
@@ -220,28 +361,30 @@
           <i class="fas fa-envelope"></i>
           <div>
             <span>Email</span>
-            <span>Arpitalucky.bsaif23@iba-suk.edu.pk</span>
+             <span>Arpitalucky.bsaif23@iba-suk.edu.pk</span> 
+
           </div>
         </a>
         <a href="tel:031032894" class="contact-link">
           <i class="fas fa-phone-alt"></i>
           <div>
             <span>Phone</span>
-            <span>031032894</span>
+            <span>03103828794</span>
           </div>
         </a>
         <a href="https://www.linkedin.com/in/arpitalucky" target="_blank" class="contact-link">
           <i class="fab fa-linkedin"></i>
           <div>
             <span>LinkedIn</span>
-            <span>linkedin.com/in/arpitalucky</span>
+             <span>linkedin.com/in/arpitalucky</span> 
           </div>
         </a>
         <a href="https://github.com/Arpita-Lucky" target="_blank" class="contact-link">
           <i class="fab fa-github"></i>
           <div>
             <span>GitHub</span>
-            <span>github.com/Arpita-Lucky</span>
+           <span>github.com/Arpita-Lucky</span> 
+
           </div>
         </a>
       </div>
@@ -274,20 +417,28 @@
       </form>
     </div>
   </section>
-    <!-- ── MODAL POP-UP ─────────────────────────────────── -->
+  <div id="custom-popup" class="popup-overlay">
+    <div class="popup-content">
+      <span class="close-btn">&times;</span>
+      <h2>✦ Hello! this is me ✦</h2>
+      <img src="me.png" alt="you were suppose to see me here" class="popup-image"><br>
+      <p>hoping to work together!</p>
+    </div>
+  </div>
+
+  <!-- ── MODAL POP-UP ─────────────────────────────────── -->
   <div id="notification-modal" class="modal-overlay">
     <div class="modal-content">
       <p id="modal-message"></p>
       <button id="modal-close-btn">Close</button>
     </div>
   </div>
-<footer>
-    <span>🧠 let's create something <strong>meaningful</strong>. ✦</span>
+
+  <footer>
+    <span> let's create something <strong>meaningful</strong>. ✦</span>
   </footer>
   <script src="script.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-
-
 
 </body>
 
