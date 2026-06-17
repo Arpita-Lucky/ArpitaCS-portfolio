@@ -389,6 +389,15 @@ footer {
   border-radius: 12px;
   margin-top: 15px;
 }
+
+.sparkle-icon {
+  width: 5rem;       /* Adjusts the sizing to match your font height */
+  height: 5rem;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 8px;   /* Pushes it slightly away from the word */
+  color: var(--purple);    /* Dynamically colors the lines to your accent purple theme */
+}
 /* ── RESPONSIVE ───────────────────────────────────── */
 /* Medium screens (tablets) */
 @media (max-width: 1024px) {
