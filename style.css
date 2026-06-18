@@ -495,6 +495,42 @@ footer {
   }
 }
 
+/* Specific adjustments for 360-375px screens */
+@media (max-width: 375px) {
+  .hero {
+    padding: 40px 20px 28px;
+  }
+
+  .hero-name {
+    font-size: 2.5rem;
+  }
+
+  .role-container {
+    font-size: 0.85rem;
+  }
+
+  .portrait-wrapper {
+    width: 180px;
+    height: 220px;
+  }
+
+  .bio {
+    font-size: 0.9rem;
+  }
+
+  .projects-section {
+    padding: 0 20px 60px;
+  }
+
+  .about-section {
+    padding: 20px 20px 50px;
+  }
+
+  .contact-section {
+    padding: 30px 20px 50px;
+  }
+}
+
 /* ── HAMBURGER MENU ─────────────────────────────────── */
 .hamburger-menu {
   position: fixed;
